@@ -1,0 +1,58 @@
+{
+  "footer": {
+    "logo": {
+      "iconPath": "/assets/images/icons.svg#fm-ico-logo",
+      "viewBox": "0 0 364 90"
+    },
+    "socialLinks": [
+      {
+        "url": "https://twitter.com/firstmile",
+        "title": "Twitter",
+        "label": "Navigate to First Mile's profile on Twitter",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-twitter",
+          "viewBox": "0 0 48 48",
+          "props": {
+            "height": "40px"
+          }
+        }
+      },
+      {
+        "url": "https://www.linkedin.com/company/first-mile-ltd",
+        "title": "LinkedIn",
+        "label": "Navigate to First Mile's profile on LinkedIn",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-linkedin",
+          "viewBox": "0 0 48 48",
+          "props": {
+            "height": "40px"
+          }
+        }
+      },
+      {
+        "url": "https://www.facebook.com/FirstMile/",
+        "title": "Facebook",
+        "label": "Navigate to First Mile's profile on Facebook",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-facebook",
+          "viewBox": "0 0 48 48",
+          "props": {
+            "height": "40px"
+          }
+        }
+      },
+      {
+        "url": "https://www.instagram.com/first_mile",
+        "title": "Instagram",
+        "label": "Navigate to First Mile's profile on Instagram",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-instagram",
+          "viewBox": "0 0 48 48",
+          "props": {
+            "height": "40px"
+          }
+        }
+      }
+    ]
+  }
+}

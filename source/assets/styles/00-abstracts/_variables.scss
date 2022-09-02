@@ -1,0 +1,61 @@
+@use "sass:math";
+// Variables
+
+// Breakpoints
+$bp-mobile-sm: "max-width: 360px" !default;
+$bp-mobile: "max-width: 400px" !default;
+$bp-phablet: "max-width: 600px" !default;
+$bp-tablet-por: "max-width: 800px" !default;
+$bp-tablet-lnd: "max-width: 1000px" !default;
+$bp-under-desktop: "max-width: 1400px" !default;
+$bp-large-monitor: "min-width: 1500px" !default;
+$bp-above-tablet: "min-width: 800px" !default;
+
+// Colors
+
+// Greens
+$green-dark: #195252;
+$green-mid: #009b9b; // First Mile Green
+$green-bright: #00cccc;
+$green-light: #7fe6e6;
+$green-lighter: #aae6e6;
+
+// Blues
+$blue-text: #2d3047;
+$blue-text-light: #5e617c; //use instead of opacity 0.8
+$blue-text-lighter: #9093b1; //use instead of opacity 0.6/7
+$blue-dark: #191847;
+$blue-mid: #102b63;
+$blue-light: #d5daff;
+$blue-bright: #2d8cfb;
+
+// Yellows
+$yellow: #ffb000;
+$yellow-light: #fad17f;
+$yellow-lighter: #fde8bf;
+
+// Greys
+$grey-mid: #686868; // Input Text
+$grey-light: #d1d3d4; // Input Border
+$off-white: #f2f3f6;
+$grey-dark: #4c5454;
+
+// $light-grey: #e1e1e1 !default;
+// $dark-grey: #333 !default;
+// $primary-color: #33c3f0 !default;
+// $secondary-color: lighten($dark-grey, 13.5%) !default;
+// $border-color: #bbb !default;
+// $link-color: #1eaedb !default;
+// $font-color: #222 !default;
+
+// Typography
+$font-family: "Larss", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+//Grid Variables
+$container-width: 1200px !default;
+$total-columns: 12 !default;
+$column-width: math.div(100, $total-columns) !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 3px !default;

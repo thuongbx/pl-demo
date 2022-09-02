@@ -1,0 +1,148 @@
+{
+  "cacheBust": true,
+  "cleanPublic": true,
+  "defaultPattern": "pages-home-landing",
+  "defaultShowPatternInfo": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": false,
+    "random": false,
+    "disco": false,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": true,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": true,
+    "tools-docs": true
+  },
+  "ishViewportRange": {
+    "s": [
+      400,
+      767
+    ],
+    "m": [
+      768,
+      1023
+    ],
+    "l": [
+      1024,
+      2600
+    ]
+  },
+  "logLevel": "info",
+  "outputFileSuffixes": {
+    "rendered": ".rendered",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  },
+  "paths": {
+    "source": {
+      "root": "./source/",
+      "patterns": "./source/_patterns/",
+      "data": "./source/_data/",
+      "meta": "./source/_meta/",
+      "annotations": "./source/_annotations/",
+      "styleguide": "dist/",
+      "patternlabFiles": {
+        "general-header": "views/partials/general-header.mustache",
+        "general-footer": "views/partials/general-footer.mustache",
+        "patternSection": "views/partials/patternSection.mustache",
+        "patternSectionSubgroup": "views/partials/patternSectionSubgroup.mustache",
+        "viewall": "views/viewall.mustache"
+      },
+      "js": "./source/assets/js",
+      "images": "./source/assets/images",
+      "mocks": "./source/assets/mocks",
+      "vendors": "./source/assets/vendors",
+      "fonts": "./source/assets/fonts",
+      "css": "./source/assets/css",
+      "samples": "./source/assets/samples",
+      "states": "./source/assets/states"
+    },
+    "public": {
+      "root": "public/",
+      "patterns": "public/patterns/",
+      "data": "public/styleguide/data/",
+      "annotations": "public/annotations/",
+      "styleguide": "public/styleguide/",
+      "js": "public/assets/js",
+      "images": "public/assets/images",
+      "mocks": "public/assets/mocks",
+      "vendors": "public/assets/vendors",
+      "fonts": "public/assets/fonts",
+      "css": "public/assets/css",
+      "samples": "public",
+      "states": "public"
+    }
+  },
+  "patternExtension": "hbs",
+  "patternStateCascade": [
+    "inprogress",
+    "inreview",
+    "complete"
+  ],
+  "patternExportAll": true,
+  "patternExportDirectory": "pattern_exports",
+  "patternExportPatternPartials": [],
+  "patternExportPreserveDirectoryStructure": false,
+  "patternExportRaw": false,
+  "patternMergeVariantArrays": true,
+  "renderFlatPatternsOnViewAllPages": false,
+  "serverOptions": {
+    "wait": 1000,
+    "port": 29898,
+    "open": false
+  },
+  "starterkitSubDir": "dist",
+  "styleGuideExcludes": [
+    "templates",
+    "pages"
+  ],
+  "theme": {
+    "color": "light",
+    "density": "compact",
+    "layout": "vertical",
+    "noViewAll": true,
+    "logo": {
+      "text": "Pattern Library",
+      "altText": "Logo",
+      "url": "./",
+      "srcLight": "/favicon.ico",
+      "srcDark": "/favicon.ico"
+    }
+  },
+  "plugins": {
+    "plugin-node-wrappable": {
+      "enabled": true,
+      "initialized": false
+    },
+    "optimizely-pl-enhancement": {
+      "enabled": true,
+      "initialized": false
+    }
+  },
+  "uikits": [
+    {
+      "name": "uikit-workshop",
+      "package": "@pattern-lab/uikit-workshop",
+      "outputDir": "",
+      "enabled": true,
+      "excludedPatternStates": [],
+      "excludedTags": []
+    }
+  ],
+  "engines": {
+    "handlebars": {
+      "extend": "helpers/*.js"
+    }
+  },
+  "transformedAssetTypes": [
+    "scss",
+    "ts"
+  ]
+}

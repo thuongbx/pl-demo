@@ -1,0 +1,16 @@
+{
+  "name": "optimizely-pl-enhancement",
+  "version": "1.0.0",
+  "description": "Optimizely enhancement for pattern lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "glob": "^7.0.0",
+    "lodash": "~4.13.1"
+  }
+}

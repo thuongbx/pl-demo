@@ -1,0 +1,10 @@
+@mixin section-margin-top {
+  margin-top: px2rem(60px);
+}
+
+@mixin container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}

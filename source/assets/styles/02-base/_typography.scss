@@ -1,0 +1,217 @@
+// Typography
+
+@font-face {
+  font-family: "Larss";
+  src: url("/assets/fonts/larsseit-light.woff2") format("woff2"), url("/assets/fonts/larsseit-light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Larss";
+  src: url("/assets/fonts/larsseit-regular.woff2") format("woff2"), url("/assets/fonts/larsseit-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Larss";
+  src: url("/assets/fonts/larsseit-medium.woff2") format("woff2"), url("/assets/fonts/larsseit-medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Larss";
+  src: url("/assets/fonts/larsseit-bold.woff2") format("woff2"), url("/assets/fonts/larsseit-bold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+h1,
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+h1,
+.h1 {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+h2,
+.h2 {
+  font-size: 4.8rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+h3 {
+  font-size: 3.2rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0rem;
+}
+h4,
+.h4 {
+  font-size: 3rem;
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+h6 {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+// Small screens
+@media (#{$bp-under-desktop}) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
+// Smaller than Tablet
+@media (#{$bp-tablet-lnd}) {
+  h1,
+  .h1 {
+    font-size: 6rem;
+  }
+  h2,
+  .h2 {
+    font-size: 4rem;
+  }
+  // h3 { font-size: 2.8rem; }
+  h4,
+  .h4 {
+    font-size: 2.6rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+// Samller than phablet
+@media (#{$bp-phablet}) {
+  h1,
+  .h1 {
+    font-size: 4rem;
+  }
+  h2,
+  .h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+  h4,
+  .h4 {
+    font-size: 2.4rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+// Samller than phablet
+@media (#{$bp-mobile-sm}) {
+  // h1 { font-size: 4.0rem; }
+  h2,
+  .h2 {
+    font-size: 2.9rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  // h4, .h4 { font-size: 2.4rem; }
+  // h5 { font-size: 1.4rem; }
+  // h6 { font-size: 1.2rem; }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.heavy,
+b,
+strong {
+  font-weight: 600;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.body {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.quote {
+  text-indent: -0.4em;
+}
+
+.bright-green-text {
+  color: $green-bright;
+}
+
+.green-text {
+  color: $green-mid;
+}
+
+.smaller {
+  font-size: 0.9em;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.smaller-still {
+  font-size: 0.8em;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.disabled {
+  opacity: 0.5;
+}

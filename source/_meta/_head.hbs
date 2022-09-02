@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="{{htmlClass}}" lang="en">
+{{reset cacheBuster}}
+
+<head>
+
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <link rel="shortcut icon" href="/assets/images/favicon@2x.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png">
+  <link rel="icon" href="/assets/images/apple-touch-icon-precomposed.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{getTitle .}}</title>
+
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  {{{ patternLabHead }}}
+  <!-- End Pattern Lab -->
+
+  <link rel="stylesheet" href="/assets/css/style-all.css?{{cacheBuster}}" media="all" />
+</head>
+
+<body id="home-page">

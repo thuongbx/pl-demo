@@ -1,0 +1,114 @@
+// Base Styles
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.8em; // currently ems cause chrome bug misinterpreting rems on body element
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: $font-family;
+  color: $blue-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex-grow: 1;
+}
+
+// Links
+
+a,
+.looks-like-link {
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    // color: darken($link-color, 5%);
+  }
+}
+
+// Misc
+
+::-moz-selection {
+  background: $blue-text;
+  color: #fff;
+}
+
+::selection {
+  background: $blue-text;
+  color: #fff;
+}
+
+hr {
+  margin-top: 7rem;
+  margin-bottom: 6.5rem;
+  border-width: 0;
+  border-top: 1px solid $grey-light;
+}
+
+// Images
+
+.clipped {
+  width: calc(55% - 1200px * 0.086);
+  background: $off-white;
+  position: absolute;
+
+  &.no-clip {
+    background: transparent;
+    width: calc(55% - 1220px * 0.086);
+  }
+}
+
+.clipped {
+  left: 0px;
+  &.no-clip {
+    left: 20px;
+  }
+}
+
+.odd .clipped {
+  left: auto;
+  right: 0px;
+  &.no-clip {
+    right: 20px;
+  }
+}
+
+.clipped::after {
+  content: " ";
+  height: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+  background-image: url(../assets/clip-right.png);
+  background-position: right top;
+}
+
+// #home-page .highlights .highlight:not(.odd) {
+// 	background: #F2F3F6;
+// }
+
+// #home-page .highlights .highlight:not(.odd) .clipped:after {
+// 	background-image: url(../images/clip-right-grey.png);
+// }
+
+.odd .clipped::after {
+  left: -1px;
+  right: auto;
+  background-image: url(../assets/clip-left.png);
+  background-position: left top;
+}
+
+.clipped.no-clip::after {
+  background-image: none;
+}

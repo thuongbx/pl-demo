@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}" lang="en">
+{{reset cacheBuster}}
+
+<head>
+  <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style-base.css?{{ cacheBuster }}" media="all" />
+
+  <!-- Below file will be used in Pattern Lab only, don't integrate it to backend -->
+  <!-- link rel="stylesheet" href="/assets/css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" /-->
+
+  <!-- Below file will be used in Pattern Lab only, don't integrate it to backend -->
+  <link rel="stylesheet" href="/assets/css/style-pl.css?{{ cacheBuster }}" media="all" />
+
+  <!-- Below script will be used in Pattern Lab only, don't integrate it to backend -->
+  <script type="text/javascript">window.plMock = true;</script>
+
+  <!-- Below script will be used in Pattern Lab only, don't integrate it to backend -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRJ0R2XSB1"></script>
+  -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KRJ0R2XSB1');
+  </script>
+
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  {{{ patternLabHead }}}
+  <!-- End Pattern Lab -->
+
+  <script defer src="/assets/js/main.js?{{ cacheBuster }}"></script>
+</head>
+
+<body class="{{ bodyClass }}">
+  <div id="top"></div>

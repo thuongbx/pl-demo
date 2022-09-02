@@ -1,0 +1,9 @@
+# List of supported browsers for this project can be found here:
+# https://episerver-services.atlassian.net/browse/ADM-156
+Chrome >= 96
+and_chr >= 96
+Firefox >= 94
+and_ff >= 94
+Edge >= 94
+Safari >= 8
+ios_saf >= 8

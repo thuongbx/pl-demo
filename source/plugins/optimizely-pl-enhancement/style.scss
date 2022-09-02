@@ -1,0 +1,210 @@
+:root {
+  --section-padding: 4rem;
+  --body-fg: #000;
+  --body-bg: #f7f4f3;
+  --primary: #015174;
+  --card-bg: #fff;
+  --primary-medium: #4c869c;
+  --primary-lighter: #68b1d1;
+  --primary-light: #e8eef1;
+  --primary-shadow: #a6bbc9;
+  --secondary: #000;
+  --secondary-bg: #f7f4f3;
+  --black: #000;
+  --white: #fff;
+  --darker-grey: #454544;
+  --dark-grey: #434342;
+  --light-grey: #b3b3b3;
+  --pl-state-bubble-bg: #f30;
+}
+
+.pl-c-body {
+  &--theme-dark {
+    --theme-bg: var(--primary) !important;
+    --theme-secondary: var(--primary) !important;
+    --pl-state-bubble-bg: #f8c276 !important;
+  }
+
+  &--theme-light {
+    .pl-c-logo__text {
+      color: var(--primary) !important;
+    }
+  }
+
+  &--theme-sidebar {
+    pl-header {
+      @media (min-width: 42em) {
+        width: 20rem !important;
+      }
+    }
+  }
+
+  &--theme-sidebar {
+    .pl-c-header {
+      @media (min-width: 42em) {
+        width: 100% !important;
+      }
+    }
+
+    pl-nav {
+      overflow: auto !important;
+    }
+
+    pl-viewport-sizes {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.pl-c-logo {
+  text-transform: none !important;
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.pl-c-viewport {
+  background-color: var(--white) !important;
+
+  &__resizer-handle {
+    background-color: var(--primary-light) !important;
+  }
+
+  &__iframe {
+    border-left: 1px solid var(--primary) !important;
+    border-right: 1px solid var(--primary) !important;
+  }
+}
+
+.pl-c-typeahead {
+  &__menu {
+    text-transform: lowercase !important;
+  }
+}
+
+$-time-ratio: 0.5;
+$-size-ratio: 0.5;
+$-begin-offset: -200px;
+$-end-offset: -500px;
+
+.pl-state-toggle {
+  &__container {
+    display: grid;
+  }
+
+  &__circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__circle {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: calc(20px * #{$-size-ratio});
+    height: calc(20px * #{$-size-ratio});
+    background: var(--pl-state-bubble-bg);
+    animation: bubbleAnimate calc(25s * #{$-time-ratio}) linear infinite;
+    bottom: $-begin-offset;
+
+    &.no-animation {
+      animation-play-state: paused;
+    }
+
+    &:nth-child(1) {
+      left: 25%;
+      width: calc(80px * #{$-size-ratio});
+      height: calc(80px * #{$-size-ratio});
+      animation-delay: calc(0s * #{$-time-ratio});
+    }
+
+    &:nth-child(2) {
+      left: 10%;
+      width: calc(20px * #{$-size-ratio});
+      height: calc(20px * #{$-size-ratio});
+      animation-delay: calc(2s * #{$-time-ratio});
+      animation-duration: calc(12s * #{$-time-ratio});
+    }
+
+    &:nth-child(3) {
+      left: 70%;
+      width: calc(20px * #{$-size-ratio});
+      height: calc(20px * #{$-size-ratio});
+      animation-delay: calc(4s * #{$-time-ratio});
+    }
+
+    &:nth-child(4) {
+      left: 40%;
+      width: calc(60px * #{$-size-ratio});
+      height: calc(60px * #{$-size-ratio});
+      animation-delay: calc(0s * #{$-time-ratio});
+      animation-duration: calc(18s * #{$-time-ratio});
+    }
+
+    &:nth-child(5) {
+      left: 65%;
+      width: calc(20px * #{$-size-ratio});
+      height: calc(20px * #{$-size-ratio});
+      animation-delay: calc(0s * #{$-time-ratio});
+    }
+
+    &:nth-child(6) {
+      left: 75%;
+      width: calc(110px * #{$-size-ratio});
+      height: calc(110px * #{$-size-ratio});
+      animation-delay: calc(3s * #{$-time-ratio});
+    }
+
+    &:nth-child(7) {
+      left: 35%;
+      width: calc(150px * #{$-size-ratio});
+      height: calc(150px * #{$-size-ratio});
+      animation-delay: calc(7s * #{$-time-ratio});
+    }
+
+    &:nth-child(8) {
+      left: 50%;
+      width: calc(25px * #{$-size-ratio});
+      height: calc(25px * #{$-size-ratio});
+      animation-delay: calc(15s * #{$-time-ratio});
+      animation-duration: calc(45s * #{$-time-ratio});
+    }
+
+    &:nth-child(9) {
+      left: 20%;
+      width: calc(15px * #{$-size-ratio});
+      height: calc(15px * #{$-size-ratio});
+      animation-delay: calc(2s * #{$-time-ratio});
+      animation-duration: calc(35s * #{$-time-ratio});
+    }
+
+    &:nth-child(10) {
+      left: 85%;
+      width: calc(150px * #{$-size-ratio});
+      height: calc(150px * #{$-size-ratio});
+      animation-delay: calc(0s * #{$-time-ratio});
+      animation-duration: calc(11s * #{$-time-ratio});
+    }
+  }
+}
+
+@keyframes bubbleAnimate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY($-end-offset) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}

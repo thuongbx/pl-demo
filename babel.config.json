@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "debug": false,
+        "bugfixes": true,
+        "corejs": 3,
+        "modules": false,
+        "targets": {
+          "esmodules": false
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "sourceMap": true
+}

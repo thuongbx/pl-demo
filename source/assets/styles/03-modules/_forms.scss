@@ -1,0 +1,187 @@
+// Forms
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+  height: 48px;
+  padding: 8px 10px 6px; // The 6px vertically centers text on FF, ignored by Webkit
+  background-color: #fff;
+  border: 1px solid $grey-light;
+  border-radius: $global-radius;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 16px;
+
+  &:focus {
+    // border: 1px solid $primary-color;
+    outline: 0;
+  }
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $grey-mid;
+  font-weight: 300;
+  margin-top: 2px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $grey-mid;
+  font-weight: 300;
+  margin-top: 2px;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $grey-mid;
+  font-weight: 300;
+  margin-top: 2px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $grey-mid;
+  font-weight: 300;
+  margin-top: 2px;
+}
+::placeholder {
+  color: $grey-mid;
+  font-weight: 300;
+  margin-top: 2px;
+}
+
+// Removes awkward default styles on some inputs for iOS
+input {
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="date"],
+  &[type="password"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    display: inline;
+  }
+}
+
+// label,
+// legend {
+// 	display: block;
+// 	// margin-bottom: .5rem;
+// 	font-weight: 600;
+// }
+
+// fieldset {
+// 	padding: 0;
+// 	border-width: 0;
+// }
+
+.form-input {
+  position: relative;
+  margin-bottom: 20px;
+
+  label {
+    opacity: 0.5;
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    top: 0;
+    left: 20px;
+    line-height: 48px;
+    @media only screen and ($bp-phablet) {
+      left: 10px;
+    }
+    color: $blue-dark;
+  }
+
+  input,
+  select,
+  textarea {
+    padding-left: 100px;
+    margin: 0 0 5px;
+    width: 100%;
+  }
+  @media only screen and ($bp-phablet) {
+    textarea {
+      padding-left: 10px;
+      padding-top: 48px;
+    }
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+  }
+  select:invalid {
+    color: gray;
+  }
+  .select-dropdown-arrow {
+    right: 20px;
+    stroke: $blue-text;
+    width: 11px;
+    height: 7px;
+    top: 21px;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .error-msg {
+    color: red;
+  }
+}
+
+.get-a-quote-form .form-input,
+.new-quote-form .form-input {
+  input,
+  select,
+  textarea {
+    padding-left: 140px;
+  }
+}
+
+.new-quote-form .form-input {
+  textarea {
+    padding-left: 20px;
+    padding-top: 35px;
+    min-height: 100px;
+  }
+}
+
+input#yourAge {
+  display: none;
+}
+
+.new-quote-form .form-input {
+  @media only screen and ($bp-phablet) {
+    textarea {
+      padding-left: 10px;
+      padding-top: 35px;
+      line-height: 1.4;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "topNav": [
+      {
+        "url": "tel:03333003448",
+        "text": "0333 300 3448",
+        "label": "Call First Mile",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-phone",
+          "viewBox": "0 0 24 25",
+          "props": {
+            "fill": "none",
+            "width": "24",
+            "height": "20px"
+          }
+        }
+      },
+      {
+        "url": "https://portal.thefirstmile.co.uk/login",
+        "text": "Log in",
+        "label": "Log in to the Customer Portal",
+        "icon": {
+          "iconPath": "/assets/images/icons.svg#fm-ico-user",
+          "viewBox": "0 0 24 25",
+          "props": {
+            "width": "24",
+            "height": "20px"
+          }
+        }
+      }
+    ],
+    "logo": {
+      "iconPath": "/assets/images/icons.svg#fm-ico-logo",
+      "viewBox": "0 0 364 90"
+    }
+  }
+}

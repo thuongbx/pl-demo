@@ -1,0 +1,14 @@
+// IMPORTANT: Don't remove empty lines between below import statements
+// This file will contains all the base base CSS from atoms and molecules
+
+@import "./00-abstracts/abstracts";
+
+@import "./01-functions/functions";
+
+@import "./01-mixins/mixins";
+
+@import "./02-base/base";
+
+@import "../../_patterns/atoms/**/*.scss";
+
+@import "../../_patterns/molecules/**/*.scss";
