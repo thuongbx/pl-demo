@@ -1,0 +1,22 @@
+.danh-sach-sp {
+  h3 {
+    color: blue;
+  }
+
+  &__items {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    background-color: yellow;
+  }
+}

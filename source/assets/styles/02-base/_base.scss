@@ -3,3 +3,9 @@
 @import "./base-styles";
 @import "./utils";
 @import "./typography";
+
+main {
+  width: 95vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
